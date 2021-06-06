@@ -127,13 +127,13 @@ int main()
         }
         DelTree(pTree);
     }
-    cout << ((balans * 100) / (balans + disbalans)) << " % сбаллансированных деревьев" << endl;
-    
-    int* mas = new int[12];
-    fillArr(mas, 12);
+    cout << endl << ((balans * 100) / (balans + disbalans)) << " % сбаллансированных деревьев" << endl << endl;
+    const int SIZE2 = 50;
+    int* mas2 = new int[SIZE2];
+    fillArr(mas2, SIZE2);
     tree dTree = NULL;
-    for (int i = 0; i < 12; i++)
-        AddNode(dTree, mas[i]);
+    for (int i = 0; i < SIZE2; i++)
+        AddNode(dTree, mas2[i]);
     printTree(dTree);
     int a;
     cout << endl << " Введите чило для поиска в дереве " << endl;
